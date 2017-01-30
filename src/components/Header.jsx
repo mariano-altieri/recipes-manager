@@ -6,11 +6,11 @@ export default class Header extends React.Component {
         return (
             <header>
                 <h1>My Recipes</h1>
-                <nav>
-                    <Link to="/">Latest</Link> |
-                    <Link to="/recipes">Recipes</Link> |
-                    <Link to="/menu-planner">Menu Planner</Link> |
-                    <Link to="/shopping-list">Shopping List</Link>
+                <nav className="main-menu row">
+                    <Link to="/" className="col-xs-12 col-sm-3">Latest</Link>
+                    <Link to="/recipes" className="col-xs-12 col-sm-3">Recipes</Link>
+                    <Link to="/menu-planner" className="col-xs-12 col-sm-3">Menu Planner</Link>
+                    <Link to="/shopping-list" className="col-xs-12 col-sm-3">Shopping List</Link>
                 </nav>
             </header>
         );
